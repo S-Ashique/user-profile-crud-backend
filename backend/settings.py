@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     'django_celery_results',
     'django_celery_beat',
 
+    'authentication',
+    'userprofile',
 
 ]
 
@@ -144,6 +146,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+AUTH_USER_MODEL = 'authentication.User'
 
 CORS_ALLOWED_ORIGINS = os.environ.get(
     'CORS_ALLOWED_ORIGINS', 'http://localhost:3000').split(',')
