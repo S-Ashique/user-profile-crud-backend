@@ -57,8 +57,6 @@ class UserProfileSerializer(serializers.ModelSerializer):
             instance.profile_picture = new_profile_picture
 
         # Remove profile pic
-        
-
         remove_profile_picture = validated_data.get('remove_profile_picture')
         if remove_profile_picture and instance.profile_picture:
             instance.profile_picture.delete()

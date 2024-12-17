@@ -23,6 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('authentication.urls')),
     path('user-profile/', include('userprofile.urls')),
+    path('user-profile/', include('userprofile.urls')),
+
 
 ]
 
